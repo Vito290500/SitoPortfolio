@@ -1,0 +1,264 @@
+@media(max-width: 60rem){
+    .nav__items{
+        display: none;
+    }
+    .hamburger{
+        display: flex;   
+    }
+    .navBar{
+        height: 3rem;
+        width: 100%;
+    }
+    .nav__title{
+        font-size: 10px;
+        padding: 1rem;
+    }
+    main{
+        padding-top: 0;
+    }
+
+    /* Side Nav Bar Style */
+    .side-nav-bar img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    /* Home Style */
+    #Home{
+        width:100%;
+    }
+    .presentation__first-h1{
+        width: 200px;
+        font-size: 2rem;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .presentation__second-h1{
+        width: 200px;
+        font-size: 2rem;
+        top: 27%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .presentation__first-h2{
+        font-size: 2rem;
+        top: 52%;
+        left: 48%;
+        width: 200px;
+        transform: translate(-50%);
+    }
+    .presentation__second-h2{
+        font-size: 2rem;
+        top: 60%;
+        left: 48%;
+        width: 200px;
+        transform: translate(-50%);
+    }   
+    .arrow::before {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid var(--main-color); 
+        bottom: 30px;
+    }
+
+
+    /* About Me Style */
+    #AboutMe{
+        width: 100vw;
+    }
+    .AboutMe__container,
+    .WhatIdo__container{
+        display: flex;
+        flex-direction: column;
+        margin-top: -4rem;
+    }
+    .AboutMe-container__description h1,
+    .WhatIdo-container__description h1{
+        font-size: 25px;
+    } 
+    .AboutMe-container__description p,
+    .WhatIdo-container__description p{
+        font-size: 16px;
+    }
+    .aboutMe-btn {
+        width: 40%;
+        height: 40px;
+        font-size: 18px;
+        border: 1px solid var(--main-color);
+    }
+    .AboutMe__container img{
+        margin-bottom: 4rem;
+    }
+    .AboutMe__container img,
+    .WhatIdo__container img{
+        width: 200px;
+    }
+    .Skills__container h1{
+        font-size: 25px;
+    }
+    .Skills__container h2{
+        margin-top: -2rem;
+        font-size: 20px;
+    }
+    .skills-grid{
+        height: 100%;
+        margin: auto;
+    }
+    .skills-grid li{
+        display: inline-block;
+        width: 50px;
+        margin: 1rem;
+        height: 50px;
+    }
+    .skills-grid li img{
+        width: 40px;
+    }
+    .skill-card{
+        width: 80px;
+        padding: 8px;
+        margin-left: -1rem
+    }
+    
+    /* My Projects Style */
+    #MyProjects{
+        margin-top: -2rem;
+    }
+    #MyProjects h1{
+        top: 4rem;
+        font-size: 25px;
+    }
+    .MyProjects__List-Item{
+        top: 15%;
+    }
+    .active{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .left-active,
+    .right-active{
+        width: 4%;
+        border-radius: 0;
+    }
+    .MyProjects-counter{
+        bottom: 4rem;
+        width: 80%;
+        left: 10%;
+    }
+    .counter{
+        width: 10px;
+        height: 10px;
+    }
+    .left-btn,
+    .right-btn{
+        width: 25px;
+        height: 25px;
+    }
+
+
+    /* Services Style */
+    .Services__title{
+        margin-top: -2rem;
+        font-size: 25px;
+        padding: 20px;
+    }
+    #Services hr{
+        width: 125px;
+    }
+    .Services-list{ 
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        left: 0;
+    }
+    .Services-list__card{
+        width: 80%;
+        height: 130px;
+        margin: auto;
+    }
+    .Services-list__card img{
+        width: 25px;
+        height: 25px;
+        padding: 6px;
+    }
+    .Services-list__card h2{
+        font-size: 15px;
+    }
+    .Services-list__card p{
+        font-size: 12px;
+    }
+
+    /* Contact Me */
+    #ContactMe{
+        height: 78vh;
+    }
+    .ContactMe-title{
+        font-size: 25px;
+        width: 90%;
+        text-align: center;
+        top: 6rem;
+        z-index: 15;
+    }
+    .ContactMe-subtitle{
+        font-size: 20px;
+        top: 8rem;
+        width: 80%;
+        z-index: 15;
+    }
+    .ContactMe__container{
+        flex-direction: column;
+    }
+    .main-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 220px;
+        border-radius: 0;
+        z-index: 5;
+        filter: blur(4px);
+    }
+    .ContactMe__container-description{
+        position: absolute;
+        top: 220px;
+        border: none;
+        margin-bottom: 2px;
+    }
+    .Container-subtitle{
+        font-size: 20px;
+    }
+    .link h2{
+        font-size: 18px;
+    }
+    .link__container a{
+        font-size: 12px;
+    }
+    .link{
+        margin: 0px;
+    }
+
+
+    /* Footer Style */
+    footer{
+        height: 5rem;
+    }
+    .footer-container{
+        position: relative;
+        top: 15%;
+    }
+    .footer__title h1{
+        font-size: 18px;
+    }
+    .footer__items{
+        display: none;
+    }
+    footer hr{
+        position: relative;
+        top: 20%;
+    }
+    .Copyright{
+        position: relative;
+        top: 20%;
+        font-size: 10px;
+    }
+}
