@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vito Di Venosa - Portfolio</title>
+    <link rel="icon" href="icon/head_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!-- Backdrop Mobile Nav View -->
+    <div class="backdrop" id="backdrop">
+        <button class="closeModal" id="closeModal"><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="25px" height="25px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></button>
+        <ul class="mobile__nav_items" id="mobile__nav">
+            <li><a href="#Home">HOME</a></li>
+            <li><a href="#AboutMe">ABOUT ME</a></li>
+            <li><a href="#MyProjects">MY PROJECTS</a></li>
+            <li><a href="#Services">SERVICES</a></li>
+            <li><a href="#ContactMe">CONTACT ME</a></li>
+        </ul>
+    </div>
+
+    <!-- Nav Bar  -->
+    <header>
+        <nav class="navBar">
+            <div class="nav__title">
+                <h1>MY <span>PORTFOLIO</span></h1>
+            </div>
+            
+            <ul class="nav__items">
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="#AboutMe">ABOUT ME</a></li>
+                <li><a href="#MyProjects">MY PROJECTS</a></li>
+                <li><a href="#Services">SERVICES</a></li>
+                <li><a href="#ContactMe">CONTACT ME</a></li>
+            </ul>
+
+            <button class="hamburger"><svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="25px" height="25px"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"/></svg></button>
+        </nav>
+    </header>
+
+    <!-- Side Nav Bar -->
+    <nav class="side-nav-bar">
+        <a href="https://www.linkedin.com/in/vito-di-venosa-2aa599258/"><img src="image/linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/Vito290500"><img src="image/github.png" alt="github"></a>
+        <a href="https://www.instagram.com/vito.codesjourney/"><img src="image/instagram.png" alt="instagram"></a>
+    </nav>
+      
+    <!-- Main Section -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="Home" class="Home"> 
+
+            <div class="Home__container">
+                <div class="presentation">
+                    <h1 class="presentation__first-h1">Hi There 👋</h1>
+                    <h1 class="presentation__second-h1">Welcome to my Portfolio</h1>
+                    <h2 class="presentation__first-h2">I'm Vito</h2><p class="slice"></p>
+                    <h2 class="presentation__second-h2">A Full Stack Web Developer</h2><p class="slice"></p>
+
+                </div>
+                
+            </div>
+            <a href="#AboutMe" class="arrow"></a>
+        </section>
+
+
+        <!-- About Me Section -->
+        <section id="AboutMe">
+
+            <!-- Who am i? Section -->
+            <div class="AboutMe__container">
+                
+                <div class="AboutMe-container__description">
+                    <h1>So, Who am I?</h1>
+                    <p>I'm Vito a full stack web developer. I'm from italy and i'm 24 years old.
+                       I have spent the last 2 years building a solid foundation on frontend and backend. These day as I continue to learn, I am focusing on gaining as much experience as possible.</p>
+
+                    <div class="flex-btn">
+                        <button class="aboutMe-btn" id="CvBtn">Download Cv</button>
+                        <button class="aboutMe-btn" id="ContactMe-btn">Contact Me</button>
+                    </div>  
+                </div>
+
+                <img class="description-img" src="image/me.jpg" alt="">
+                
+            </div>
+
+            <!-- What I do ? Section-->
+            <div class="WhatIdo__container">
+                <img class="WhatIdo-img" src="image/postazione2.jpg" alt="">
+                
+                <div class="WhatIdo-container__description">
+                    <h1>What i do?</h1>
+                    <p>My passion is creating websites or web applications, I like creating something cool and solving problems. Outside the office you will find me dreaming about travel, going to the gym or drawing something artistic.</p>
+                    
+                    <div class="flex-btn">
+                        <button class="aboutMe-btn" id="MyProjects-Btn">My Projects</button>
+                        <button class="aboutMe-btn" id="MyServices-Btn">My Services</button>
+                    </div>    
+                </div>
+            </div>
+            
+            <!-- My Skill Section -->
+            <div class="Skills__container">
+                
+                    <h1><span>My</span> Skills</h1>
+                    <h2>Web Development & Database Development</h2>
+                    
+                    <ul class="skills-grid">
+                        <li>
+                            <div class="skill-card">
+                                <img src="https://console.kamatera.com/assets/images/os/os_django.png" alt="django">
+                                <div class="Skill-Description">
+                                    <p>Django</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/640px-Python.svg.png" alt="Python" >
+                                <div class="Skill-Description">
+                                    <p>Python</p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-development-mysql-logo-code-icon-9.png" alt="MySql">
+                                <div class="Skill-Description">
+                                    <p>MySql</p>
+                                  
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="PostgreSql">
+                                <div class="Skill-Description">
+                                    <p>PostgreSql</p>
+                                    
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="Html">
+                                <div class="Skill-Description">
+                                    <p>Html</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <img src="https://media.licdn.com/dms/image/D4D12AQH0aFMY6G2rHQ/article-cover_image-shrink_720_1280/0/1689263376287?e=2147483647&v=beta&t=X4o6_ZtUzTQ_OTBzY8dYJkOzQg0m0Pk4sCzeB-rX_gE" alt="Css">
+                                <div class="Skill-Description">
+                                    <p>Css</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <img src="https://play-lh.googleusercontent.com/rfWOJQVBHoAZ_B43v0ySFlLmJBLtksVGAxGaFRh2ex4nOmNQ86qzG4sYWV63IKrXlvI" alt="JavaScript">
+                                <div class="Skill-Description">
+                                    <p>JavaScript</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-card">
+                                <img src="https://www.geekandjob.com/uploads/wiki/ff00c08760983e0e037aaf6ab4e004f4d147276a.png" alt="Git">
+                                <div class="Skill-Description">
+                                    <p>Git</p>
+                                </div>
+                            </div>
+                        </li>     
+                        <li>
+                            <div class="skill-card">
+                                <img src="https://pbs.twimg.com/profile_images/1372304699601285121/5yBS6_3F_400x400.jpg" alt="django">
+                                <div class="Skill-Description">
+                                    <p>Github</p>
+                                </div>
+                            </div>
+                        </li>  
+                    </ul>
+                    
+                
+            </div>
+        </section>
+
+
+        <!-- My Projects Section -->
+        <section id="MyProjects">
+            <h1 class="MyProjects-tittle"><span>My</span> Projects</h1>
+            
+            <div class="MyProjects__List-Item">
+                <a 
+                    href="https://github.com/Vito290500/Piattaforma-Film" 
+                    class="MyProjects__Card active Card1" 
+                    id="1">
+                </a>
+                <a 
+                    href="https://github.com/Vito290500/Shop_chart_and_filter" 
+                    class="MyProjects__Card right-active Card2" 
+                    id="2">
+                </a>
+                <a 
+                    href="https://github.com/Vito290500/Buy_Service" 
+                    class="MyProjects__Card Card3" 
+                    id="3">
+                </a>
+                <a
+                    href="https://github.com/Vito290500/Login_and_Register"
+                    class="MyProjects__Card Card4" 
+                    id="4">
+                </a>
+                <a 
+                    href="https://github.com/Vito290500/Blog_Page" 
+                    class="MyProjects__Card Card5" 
+                    id="5">
+                </a>
+                <a 
+                    href="https://github.com/Vito290500/Sito-Portfolio" 
+                    class="MyProjects__Card Card6" 
+                    id="6">
+                </a>
+                <a 
+                    href="https://github.com/Vito290500/Login-and-Register-JS-" 
+                    class="MyProjects__Card Card7" 
+                    id="7">
+                </a>
+                <a 
+                    href="https://github.com/Vito290500/To-Do-List-Web-server-side"
+                    class="MyProjects__Card Card8" 
+                    id="8">
+                </a>
+                <a
+                    href="https://github.com/Vito290500/Drag-Drop" 
+                    class="MyProjects__Card left-active Card9" 
+                    id="9">
+                </a>
+            </div>
+        
+            <div class="MyProjects-counter">
+                <button class="left-btn"><</button>
+                <button class="counter light" data-counter="1" id="1"></button>
+                <button class="counter 2" data-counter="2"></button>
+                <button class="counter 3" data-counter="3"></button>
+                <button class="counter 4" data-counter="4"></button>
+                <button class="counter 5" data-counter="5"></button>
+                <button class="counter 6" data-counter="6"></button>
+                <button class="counter 7" data-counter="7"></button>
+                <button class="counter 8" data-counter="8"></button>
+                <button class="counter 9" data-counter="9"></button>
+                <button class="right-btn">></button>
+            </div>
+        </section>
+        
+
+        <!-- Services Section -->
+        <section id="Services">
+            <div class="Services__background"></div>
+            <h1 class="Services__title"><span>My</span> Services</h1>
+            <hr>
+            <ul class="Services-list">
+                <li class="Services-list__card">
+                    <img src="icon/responsive.png" alt="">
+                    <h2>RESPONSIVE DESIGN</h2>
+                    <p id="Services-text"> 
+                        I will create a web page or a completely web application adaptable to all smartphone,
+                        tablet and PC screen sizes. I will also make sure that all animations and methods used 
+                        are supported by the corresponding browsers.
+                    </p>
+                </li>
+                <li class="Services-list__card">
+                    <img src="icon/webdesign.png" alt="">
+                    <h2>WEB DESIGN</h2>
+                    <p id="Services-text">
+                        I will design a website or web application for you following your instructions and choosing 
+                        the best templates and color palettes for you, so as to be able to satisfy your needs and obtain 
+                        an impeccable and captivating design.
+                    </p>
+                </li>
+                <li class="Services-list__card">
+                    <img src="icon/user.png" alt="">
+                    <h2>USER EXPERIENCE</h2>
+                    <p id="Services-text"> 
+                        I will create a website or web application that is easy and intuitive to use, so as to facilitate its
+                        use and improve the user experience when interacting with the web application or website. 
+
+                    </p>
+                </li>
+                <li class="Services-list__card">
+                    <img src="icon/database.png" alt="">
+                    <h2>SCALABLE DATABASE</h2>
+                    <p id="Services-text">
+                        
+                        I will design a scalable database for your web application, following the best practice guidelines 
+                        used for designing and creating a database and design the best solution for you application.
+                    </p>
+                </li>
+                <li class="Services-list__card">
+                    <img src="icon/cleancode.png" alt="">
+                    <h2>CLEAN CODE</h2>
+                    <p id="Services-text"> 
+                        I will create source code for your web page trying to follow the standards and guidelines of best
+                        practices for web design and development, making the code clear and precise. I will optimize the 
+                        code to make your web page perform as well as possible.
+                    </p>
+                </li>
+               
+                
+                <li class="Services-list__card">
+                    <img src="icon/supporto.png" alt="">
+                    <h2>FAST SUPPORT</h2>
+                    <p id="Services-text">
+                        I will be at your complete disposal for changes and modifications during the development process of
+                        the web page and beyond. I will make my support available should you need it or should you encounter
+                        technical problems relating to the website.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        
+
+        <!-- Contact Me Section -->
+        <section id="ContactMe">
+            <h1 class="ContactMe-title">Let's start a project together</h1>
+            <h2 class="ContactMe-subtitle">or let's start a conversation</h2>
+            <div class="ContactMe__container">
+                <img class="main-image" src="https://media.istockphoto.com/id/1136789226/photo/hand-using-phone-with-centralized-linked-cloud-system-concept.jpg?s=612x612&w=0&k=20&c=tkyF7qQi8dFnTt2MA8ICL5ty4WOoQdc3ni09uo-kfzU=" alt="">
+               
+                <div class="ContactMe__container-description">
+                    <h2 class="Container-subtitle">Get in Touch</h2>
+
+                    <div class="contact__links-container">
+
+                        <div class="link">
+                            <img src="https://kinsta.com/it/wp-content/uploads/sites/2/2021/02/piu-account-gmail.png" alt="">
+                            
+                            <div class="link__container">
+                                <h2>Email</h2>
+                                <a href="mailto:divenosavito00@gmail.com?subject=Subject%20Here&body=Body%20text%20here">divenosavito00@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="link">
+                            <img src="https://www.tuttotech.net/wp-content/uploads/2019/11/linkedin-2019.png" alt="">
+                            <div class="link__container">
+                                <h2>Linkedin</h2>
+                                <a href="https://www.linkedin.com/in/vito-di-venosa-2aa599258/">My Linkedin Profile</a>
+
+                            </div>
+                        </div>
+
+                        <div class="link">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSufaCxkpM5uXD_SnAvGC8WjtffAgPnVEWKTOoZo5usKMNf6KkfcAYAINRp4WQX3PMGm-c&usqp=CAU" alt="">
+                            <div class="link__container">
+                                <h2>Github</h2>
+                                <a href="https://github.com/Vito290500">My Github Profile</a>
+                            </div>
+                        </div>
+
+                        <div class="link">
+                            <img src="https://cryptodnes.bg/wp-content/uploads/2022/06/instagram.jpg" alt="">
+                            <div class="link__container">
+                                <h2>Instagram</h2>
+                                <a href="https://www.instagram.com/vito.codesjourney/">My Instragram Profile</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer__title">
+                <h1>Vito Di Venosa <span>Portfolio</span></h1>
+            </div>
+            <ul class="footer__items">
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="#AboutMe">ABOUT ME</a></li>
+                <li><a href="#Services">SERVICES</a></li>
+                <li><a href="#MyProjects">MY PROJECTS</a></li>
+            </ul>
+            <a href="mailto:divenosavito00@gmail.com?subject=Subject%20Here&body=Body%20text%20here" class="footer__report">Report</a>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright @2024 All rights reserved | This templates was made by myself</p>
+    </footer>
+</body>
+</html>
