@@ -474,12 +474,11 @@ const trigger = ScrollTrigger.create({
 
 
 /* Mobile Adjust */
-/* Mobile Scroll */
 
 
 /* Services Truncate text*/
 function truncateText() {
-  const mobileMaxWidth = 60; 
+  const mobileMaxWidth = 40; 
   const maxLength = 200; 
 
   const textElements = document.querySelectorAll("p#Services-text"); 
