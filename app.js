@@ -182,16 +182,16 @@ ContactMeBtn.addEventListener('click', function(e){
 
 // Scroll Effect My Project
 for (const btn of AllCounter) {
-  btn.addEventListener('click', (function() {
+  btn.addEventListener('click', function() {
     const dataCounterValue = this.getAttribute('data-counter');
     const ItemToShow = document.getElementById(dataCounterValue);
 
     let NewLeft, NewRight;
 
-    if (parseInt(dataCounterValue) == 1) {
-      NewLeft = document.getElementById(9);
+    if (parseInt(dataCounterValue) === 1) {
+      NewLeft = document.getElementById(10); // Changed from 9 to 10 for the last element
       NewRight = document.getElementById(parseInt(dataCounterValue) + 1);
-    } else if (parseInt(dataCounterValue) == 9) {
+    } else if (parseInt(dataCounterValue) === 10) { // Changed from 9 to 10
       NewLeft = document.getElementById(parseInt(dataCounterValue) - 1);
       NewRight = document.getElementById(1);
     } else {
@@ -215,61 +215,63 @@ for (const btn of AllCounter) {
     if (lightCounter) lightCounter.classList.remove('light');
 
     this.classList.add('light');
-  }).bind(btn));
+  });
 }
-LeftBtn.addEventListener('click', ()=>{
-    const ActiveItem = document.querySelector('.MyProjects__Card.active');
-    const RightActive = document.querySelector('.MyProjects__Card.right-active');
-    const LeftActive = document.querySelector('.MyProjects__Card.left-active');
-    var NextIdItem = parseInt(LeftActive.id) - 1;
 
-    if(NextIdItem == 0){
-        NextIdItem = 9;
-    }
+LeftBtn.addEventListener('click', () => {
+  const ActiveItem = document.querySelector('.MyProjects__Card.active');
+  const RightActive = document.querySelector('.MyProjects__Card.right-active');
+  const LeftActive = document.querySelector('.MyProjects__Card.left-active');
+  var NextIdItem = parseInt(LeftActive.id) - 1;
 
-    ActiveItem.classList.remove('active');
-    RightActive.classList.remove('right-active');
-    LeftActive.classList.remove('left-active');
+  if(NextIdItem === 0){
+      NextIdItem = 10;
+  }
 
-    LeftActive.classList.add('active');
-    ActiveItem.classList.add('right-active');
+  ActiveItem.classList.remove('active');
+  RightActive.classList.remove('right-active');
+  LeftActive.classList.remove('left-active');
 
-    const NextItemToShow = document.getElementById(NextIdItem);
-    NextItemToShow.classList.add('left-active'); 
-    
-    const element = document.querySelector(`[data-counter='${NextIdItem}']`);
+  LeftActive.classList.add('active');
+  ActiveItem.classList.add('right-active');
 
-    const next = document.querySelector(`[data-counter='${LeftActive.id}']`);
-    const current = document.querySelector(`[data-counter='${ActiveItem.id}']`);
-    current.classList.remove('light');
-    next.classList.add('light');
+  const NextItemToShow = document.getElementById(NextIdItem);
+  NextItemToShow.classList.add('left-active'); 
+  
+  const element = document.querySelector(`[data-counter='${NextIdItem}']`);
 
-})
-RightBtn.addEventListener('click', () => {
-    const ActiveItem = document.querySelector('.MyProjects__Card.active');
-    const RightActive = document.querySelector('.MyProjects__Card.right-active');
-    const LeftActive = document.querySelector('.MyProjects__Card.left-active');
-    var NextIdItem = parseInt(RightActive.id) + 1;
-
-    if (NextIdItem == 10) {
-        NextIdItem = 1;
-    }
-
-    ActiveItem.classList.remove('active');
-    RightActive.classList.remove('right-active');
-    LeftActive.classList.remove('left-active');
-
-    RightActive.classList.add('active');
-    ActiveItem.classList.add('left-active');
-
-    const NextItemToShow = document.getElementById(NextIdItem);
-    NextItemToShow.classList.add('right-active');
-
-    const next = document.querySelector(`[data-counter='${RightActive.id}']`);
-    const current = document.querySelector(`[data-counter='${ActiveItem.id}']`);
-    current.classList.remove('light');
-    next.classList.add('light');
+  const next = document.querySelector(`[data-counter='${LeftActive.id}']`);
+  const current = document.querySelector(`[data-counter='${ActiveItem.id}']`);
+  current.classList.remove('light');
+  next.classList.add('light');
 });
+
+RightBtn.addEventListener('click', () => {
+  const ActiveItem = document.querySelector('.MyProjects__Card.active');
+  const RightActive = document.querySelector('.MyProjects__Card.right-active');
+  const LeftActive = document.querySelector('.MyProjects__Card.left-active');
+  var NextIdItem = parseInt(RightActive.id) + 1;
+
+  if (NextIdItem === 11) {
+      NextIdItem = 1;
+  }
+
+  ActiveItem.classList.remove('active');
+  RightActive.classList.remove('right-active');
+  LeftActive.classList.remove('left-active');
+
+  RightActive.classList.add('active');
+  ActiveItem.classList.add('left-active');
+
+  const NextItemToShow = document.getElementById(NextIdItem);
+  NextItemToShow.classList.add('right-active');
+
+  const next = document.querySelector(`[data-counter='${RightActive.id}']`);
+  const current = document.querySelector(`[data-counter='${ActiveItem.id}']`);
+  current.classList.remove('light');
+  next.classList.add('light');
+});
+
 
 
 // Animation

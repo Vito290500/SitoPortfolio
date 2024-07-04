@@ -478,59 +478,66 @@ main section p{
     border-radius: 20px;
 }
 .Card1{
-    background-image: url(image/project1.png);
+    background-image: url(image/ubisoft.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .Card2{
+    background-image: url(image/project1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.Card3{
     background-image: url(image/project2.png); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
 }
-.Card3{
+.Card4{
     background-image: url(image/project3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.Card4{
+.Card5{
     background-image: url(image/project4.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.Card5{
+.Card6{
     background-image: url(image/project5.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.Card6{
+.Card7{
     background-image: url(image/project6.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.Card7{
+.Card8{
     background-image: url(image/project7.png);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
 } 
-.Card8{
+.Card9{
     background-image: url(image/project8.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.Card9{
+.Card10{
     background-image: url(image/project9.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .MyProjects-counter{
     display: flex;
     position: absolute;
